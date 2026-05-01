@@ -196,7 +196,6 @@ export default function Hero() {
         <div style={{ display: 'flex', gap: '2.5rem', marginBottom: '2.8rem' }}>
           {[
             { val: '500+', label: 'LeetCode Solved' },
-            { val: '9.3', label: 'CGPA' },
           ].map(s => (
             <div key={s.label}>
               <div style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--white)', lineHeight: 1 }}>{s.val}</div>
