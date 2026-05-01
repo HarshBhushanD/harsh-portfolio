@@ -109,7 +109,7 @@ export default function Contact() {
         {/* Footer */}
         <div style={{ marginTop: '6rem', paddingTop: '2rem', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontFamily: 'var(--ff-mono)', fontSize: '0.7rem', color: 'var(--muted)' }}>
-            © 2025 Harsh Bhushan Dixit
+            © 2026 Harsh Bhushan Dixit
           </span>
           <span style={{ fontFamily: 'var(--ff-mono)', fontSize: '0.7rem', color: 'var(--muted)' }}>
             Built with React · Three.js · GSAP

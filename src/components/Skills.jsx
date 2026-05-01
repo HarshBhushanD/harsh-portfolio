@@ -23,12 +23,12 @@ const SKILL_GROUPS = [
   {
     title: 'Databases',
     accent: 'var(--accent2)',
-    items: ['MongoDB', 'Firebase','MySQL','Supabase'],
+    items: ['MongoDB', 'Firebase'],
   },
   {
     title: 'Tools & Technologies',
     accent: 'var(--accent3)',
-    items: ['Git & GitHub','GitLab', 'Docker', 'AWS (EC2, Lambda, ECR)', 'REST APIs','Jenkins'],
+    items: ['Git & GitHub', 'Docker', 'AWS (EC2, Lambda, ECR)', 'REST APIs'],
   },
   {
     title: 'Core Concepts',
@@ -76,7 +76,7 @@ export default function Skills() {
           A clean, practical set of skills I use to build and ship full-stack products.
         </p>
 
-        <div ref={gridRef} style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '1.5rem' }}>
+        <div ref={gridRef} className="skills-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '1.5rem' }}>
           {SKILL_GROUPS.map(group => (
             <div key={group.title} style={{
               padding: '1.6rem',

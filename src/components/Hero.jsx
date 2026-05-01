@@ -17,7 +17,16 @@ export default function Hero() {
   // Three.js globe
   useEffect(() => {
     const mount = globeRef.current;
-    const size = 320;
+    if (!mount) return;
+
+    const computeSize = () => {
+      const rect = mount.getBoundingClientRect();
+      const fallback = Math.min(320, Math.floor(window.innerWidth * 0.72));
+      const s = Math.floor(rect.width || fallback);
+      return Math.max(220, Math.min(320, s));
+    };
+
+    let size = computeSize();
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
     camera.position.z = 3;
@@ -81,7 +90,20 @@ export default function Hero() {
     };
     animate();
 
-    return () => { cancelAnimationFrame(raf); renderer.dispose(); mount.removeChild(renderer.domElement); };
+    const onResize = () => {
+      const next = computeSize();
+      if (next === size) return;
+      size = next;
+      renderer.setSize(size, size);
+    };
+    window.addEventListener('resize', onResize);
+
+    return () => {
+      window.removeEventListener('resize', onResize);
+      cancelAnimationFrame(raf);
+      renderer.dispose();
+      mount.removeChild(renderer.domElement);
+    };
   }, []);
 
   // GSAP entrance
@@ -235,18 +257,18 @@ export default function Hero() {
       </div>
 
       {/* Right — Photo + Globe */}
-      <div ref={imgContainerRef} style={{ position: 'relative', flexShrink: 0 }}>
+      <div ref={imgContainerRef} style={{ position: 'relative', flexShrink: 0, marginLeft: '2.5rem' }}>
         {/* Globe behind */}
         <div ref={globeRef} style={{
           position: 'absolute', top: '50%', left: '50%',
           transform: 'translate(-50%,-50%)',
-          width: 320, height: 320, zIndex: 0,
+          width: 'min(320px, 72vw)', height: 'min(320px, 72vw)', zIndex: 0,
         }} />
 
         {/* Photo */}
         <div style={{
           position: 'relative', zIndex: 1,
-          width: 280, height: 340,
+          width: 'clamp(220px, 62vw, 280px)', height: 'clamp(280px, 75vw, 340px)',
           borderRadius: '2px 80px 2px 80px',
           overflow: 'hidden',
           border: '1px solid rgba(124,111,255,0.25)',

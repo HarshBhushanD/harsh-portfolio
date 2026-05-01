@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -44,6 +44,13 @@ export default function Experience() {
   const itemRefs = useRef([]);
   const titleRef = useRef(null);
   const achieveRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 900);
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= 900);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   useEffect(() => {
     gsap.fromTo(titleRef.current, { opacity: 0, y: 40 }, {
@@ -90,20 +97,24 @@ export default function Experience() {
       <div style={{ position: 'relative', maxWidth: 900, margin: '0 auto 5rem' }}>
         {/* Line */}
         <div ref={lineRef} style={{
-          position: 'absolute', left: '50%', top: 0, bottom: 0,
+          position: 'absolute', left: isMobile ? 10 : '50%', top: 0, bottom: 0,
           width: 1, background: 'linear-gradient(to bottom, var(--accent), transparent)',
-          transform: 'translateX(-50%)',
+          transform: isMobile ? 'none' : 'translateX(-50%)',
         }} />
 
         {experiences.map((exp, i) => (
           <div key={exp.company} ref={el => itemRefs.current[i] = el} style={{
-            display: 'flex', justifyContent: i % 2 === 0 ? 'flex-end' : 'flex-start',
+            display: 'flex',
+            justifyContent: isMobile ? 'flex-start' : (i % 2 === 0 ? 'flex-end' : 'flex-start'),
             marginBottom: '3rem', position: 'relative',
+            paddingLeft: isMobile ? 28 : 0,
           }}>
             {/* Dot */}
             <div style={{
-              position: 'absolute', left: '50%', top: '1.5rem',
-              transform: 'translate(-50%,-50%)',
+              position: 'absolute',
+              left: isMobile ? 10 : '50%',
+              top: '1.5rem',
+              transform: isMobile ? 'translate(-50%,-50%)' : 'translate(-50%,-50%)',
               width: 12, height: 12, borderRadius: '50%',
               background: exp.color, boxShadow: `0 0 20px ${exp.color}80`,
               zIndex: 2,
@@ -111,12 +122,13 @@ export default function Experience() {
 
             {/* Card */}
             <div style={{
-              width: '44%', marginRight: i % 2 === 0 ? '8%' : 0,
-              marginLeft: i % 2 !== 0 ? '8%' : 0,
+              width: isMobile ? '100%' : '44%',
+              marginRight: isMobile ? 0 : (i % 2 === 0 ? '8%' : 0),
+              marginLeft: isMobile ? 0 : (i % 2 !== 0 ? '8%' : 0),
               background: 'rgba(13,13,34,0.9)', backdropFilter: 'blur(20px)',
               border: `1px solid ${exp.color}30`, borderRadius: 12, padding: '1.8rem',
-              borderLeft: i % 2 !== 0 ? `3px solid ${exp.color}` : '1px solid rgba(255,255,255,0.07)',
-              borderRight: i % 2 === 0 ? `3px solid ${exp.color}` : '1px solid rgba(255,255,255,0.07)',
+              borderLeft: isMobile ? `3px solid ${exp.color}` : (i % 2 !== 0 ? `3px solid ${exp.color}` : '1px solid rgba(255,255,255,0.07)'),
+              borderRight: isMobile ? '1px solid rgba(255,255,255,0.07)' : (i % 2 === 0 ? `3px solid ${exp.color}` : '1px solid rgba(255,255,255,0.07)'),
             }}>
               <div style={{ fontFamily: 'var(--ff-mono)', fontSize: '0.65rem', color: exp.color, letterSpacing: '0.12em', marginBottom: 8 }}>
                 {exp.period}
