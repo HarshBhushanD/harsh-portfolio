@@ -36,7 +36,7 @@ const achievements = [
   { title: '3rd Place — Hack The Flag', org: 'GDG', color: 'var(--accent)' },
   { title: '2nd Place — TechNation', org: 'CSI', color: 'var(--accent)' },
   { title: 'Web Dev Lead', org: 'Connect SRM', color: 'var(--accent)' },
-  { title: '400+ Problems Solved', org: 'LeetCode', color: 'var(--accent)' },
+  { title: '500+ Problems Solved', org: 'LeetCode', color: 'var(--accent)' },
 ];
 
 export default function Experience() {
