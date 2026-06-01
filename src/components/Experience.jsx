@@ -35,7 +35,7 @@ const achievements = [
   { title: '2nd Place — Devalchemy', org: 'CSI', color: 'var(--accent)' },
   { title: '3rd Place — Hack The Flag', org: 'GDG', color: 'var(--accent)' },
   { title: '2nd Place — TechNation', org: 'CSI', color: 'var(--accent)' },
-  { title: 'Web Dev Lead', org: 'Connect SRM', color: 'var(--accent)' },
+  { title: 'Co-Founder', org: 'Connect SRM', color: 'var(--accent)' },
   { title: '500+ Problems Solved', org: 'LeetCode', color: 'var(--accent)' },
 ];
 
