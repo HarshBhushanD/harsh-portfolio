@@ -24,6 +24,15 @@ const projects = [
     stat: 'Secure Payments',
   },
   {
+    name: 'Vaidya',
+    stack: ['React.js', 'Node.js', 'Express.js', 'Firebase'],
+    desc: 'Built a HealthTech platform enabling users to discover Ayushman Bharat-covered hospitals and treatments, book online consultations, and perform preliminary health assessments including diabetes risk and mental wellness screening. Developed a centralized healthcare information system to enhance accessibility and patient engagement.',
+    accent: '#4CAF50',
+    link: '#',
+    badge: 'HealthTech',
+    stat: 'Healthcare Accessibility Platform',
+  },
+  {
     name: 'My-Chat (AI Clone)',
     stack: ['React.js', 'MongoDB', 'Express.js', 'Node.js'],
     desc: 'Conversational AI using OpenAI API. Designed intuitive chat interface with React and Tailwind, backend with Node.js and Express for API handling.',
