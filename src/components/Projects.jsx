@@ -15,6 +15,15 @@ const projects = [
     stat: '2K+ Users',
   },
   {
+    name: 'AgriEase',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Machine Learning'],
+    desc: 'AI-powered agriculture platform providing multilingual farmer support, intelligent chatbot assistance, soil health analysis, crop disease prediction, and smart crop recommendations. Utilizes soil test reports, land records, and seasonal conditions to suggest the most suitable crops and cultivation periods. Integrated a digital marketplace connecting farmers with buyers and suppliers for a seamless farming ecosystem.',
+    accent: '#8BC34A',
+    link: '#',
+    badge: 'AgriTech',
+    stat: 'AI-Powered Farming Assistant',
+  },
+  {
     name: 'E-GoldStore',
     stack: ['React.js', 'Firebase', 'Vite', 'Tailwind'],
     desc: 'Digital platform for buying Gold & Silver online securely. Integrated Firebase auth, PayPal payment gateway, and real-time database.',
