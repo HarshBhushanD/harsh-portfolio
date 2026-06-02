@@ -1,16 +1,70 @@
-# React + Vite
+# 🚀 Harsh Bhushan Dixit - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive portfolio website showcasing my skills, experience, achievements, and professional journey as a Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🌟 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I am a Full Stack Developer and Computer Science student passionate about building scalable web applications, AI-powered solutions, and cloud-based platforms. This portfolio serves as a central hub to showcase my technical expertise, accomplishments, and growth as a developer.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Responsive and modern user interface
+* Professional developer profile
+* Technical skills showcase
+* Experience and leadership highlights
+* Education and achievements section
+* Smooth animations and interactive components
+* Contact and social media integration
+* Mobile-friendly design
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+* Firebase
+
+### Cloud & DevOps
+
+* AWS
+* Docker
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+
+## 🎯 Highlights
+
+* MERN Stack Developer
+* Co-Founder of Connect SRM
+* Tech Team Member at HackHound, Bitbucks, and ISTE
+* Strong foundation in Full Stack Development, Cloud Computing, and Problem Solving
+* Passionate about building impactful technology solutions
+
+## 📫 Connect With Me
+
+I'm always open to discussing new opportunities, collaborations, innovative projects, and technology-related conversations.
+
+* **LinkedIn:** https://www.linkedin.com/in/harshbhushandixit/
+* **GitHub:** https://github.com/HarshBhushanD
+* **Email:** [harshbhushandixit@gmail.com](mailto:harshbhushandixit@gmail.com)
+
+Feel free to reach out if you'd like to collaborate, discuss a project, or simply connect with me.
+
+
+⭐ Thank you for visiting my portfolio.
