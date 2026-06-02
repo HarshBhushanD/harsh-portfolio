@@ -23,17 +23,17 @@ const SKILL_GROUPS = [
   {
     title: 'Databases',
     accent: 'var(--accent2)',
-    items: ['MongoDB', 'Firebase'],
+    items: ['MongoDB', 'Firebase','Supabase'],
   },
   {
     title: 'Tools & Technologies',
     accent: 'var(--accent3)',
-    items: ['Git & GitHub', 'Docker', 'AWS (EC2, Lambda, ECR)', 'REST APIs'],
+    items: ['Git & GitHub', 'Docker', 'AWS (EC2, Lambda, ECR)', 'REST APIs','GitLab'],
   },
   {
     title: 'Core Concepts',
     accent: 'var(--accent2)',
-    items: ['Data Structures & Algorithms', 'Object-Oriented Programming (OOP)', 'System Design (Basic)', 'Cloud Computing'],
+    items: ['Data Structures & Algorithms', 'Object-Oriented Programming (OOP)', 'System Design (Basic)', 'Cloud Computing','Networking (Basic)'],
   },
 ];
 
