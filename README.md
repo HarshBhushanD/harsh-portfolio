@@ -36,17 +36,21 @@ I am a Full Stack Developer and Computer Science student passionate about buildi
 
 * MongoDB
 * Firebase
+* Supabase
 
 ### Cloud & DevOps
 
 * AWS
 * Docker
+* Jenkins
+* GitLab CI/CD
 
 ### Tools
 
 * Git
 * GitHub
 * VS Code
+* GitLab
 
 ## 🎯 Highlights
 
