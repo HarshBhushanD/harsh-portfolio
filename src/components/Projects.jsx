@@ -6,6 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
+  name: 'HirePilot AI',
+  stack: ['React.js', 'FastAPI', 'Python', 'PostgreSQL', 'OpenAI API', 'LLM', 'Tailwind CSS'],
+  desc: 'AI-powered career copilot that analyzes resumes, provides ATS scoring, identifies skill gaps, matches candidates with job descriptions, and intelligently tailors resumes and cover letters for specific roles. Includes AI-powered mock interviews with role-specific question generation, real-time text and voice interactions, adaptive follow-up questions, and detailed performance feedback. Also provides GitHub and portfolio analysis, personalized career roadmaps, job application tracking, and an AI career assistant for personalized career guidance.',
+  accent: '#6366F1',
+  link: '#',
+  badge: 'AI CareerTech',
+  stat: 'AI-Powered Career Copilot',
+},
+  {
     name: 'Connect SRM',
     stack: ['React.js', 'Firebase', 'Tailwind'],
     desc: 'Student-focused platform with 2,000+ users. Led web development, UI/UX design, and community engagement with scroll animations and geometric transitions.',
