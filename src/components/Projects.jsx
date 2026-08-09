@@ -4,70 +4,146 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const projects = [
-  {
+const projects = [{
+  name: 'Connect SRM',
+  stack: [
+    'React.js',
+    'React Native',
+    'JavaScript',
+    'Tailwind CSS',
+    'Firebase',
+    'Node.js',
+    'Express.js',
+    'GitHub API',
+    'LeetCode API',
+    'REST APIs'
+  ],
+  desc: 'Student-focused community platform serving 2,000+ users, built to centralize campus resources, events, projects, notes, and student engagement. Developed responsive web interfaces and mobile experiences while integrating Firebase for authentication and real-time data, REST APIs for dynamic content, and external GitHub and LeetCode APIs for developer-focused features.',
+  accent: '#7c6fff',
+  link: '#',
+  badge: 'LIVE',
+  stat: '2K+ Users',
+},
+
+{
+  name: 'AgriEase',
+  stack: [
+    'React.js',
+    'JavaScript',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Machine Learning',
+    'Python',
+    'REST APIs',
+    'Tailwind CSS',
+    'AI/ML'
+  ],
+  desc: 'AI-powered agriculture platform providing multilingual farmer support, intelligent chatbot assistance, soil health analysis, crop disease prediction, and personalized crop recommendations. Combines machine learning with soil reports, land information, and seasonal conditions to identify suitable crops and cultivation periods, while providing a digital marketplace connecting farmers with buyers and suppliers.',
+  accent: '#8BC34A',
+  link: '#',
+  badge: 'AgriTech',
+  stat: 'AI-Powered Farming Assistant',
+},
+
+{
+  name: 'E-GoldStore',
+  stack: [
+    'React.js',
+    'JavaScript',
+    'Vite',
+    'Tailwind CSS',
+    'Firebase',
+    'Firebase Authentication',
+    'Firestore',
+    'PayPal API',
+    'REST APIs'
+  ],
+  desc: 'Secure digital commerce platform for buying Gold and Silver products online. Implemented Firebase Authentication and Firestore for secure user management and real-time product data, integrated PayPal for payment processing, and developed a responsive Vite and Tailwind CSS interface for a seamless digital purchasing experience.',
+  accent: '#f7c948',
+  link: '#',
+  badge: 'FINTECH',
+  stat: 'Secure Digital Payments',
+},
+
+{
+  name: 'Vaidya',
+  stack: [
+    'React.js',
+    'JavaScript',
+    'Node.js',
+    'Express.js',
+    'Firebase',
+    'Firestore',
+    'REST APIs',
+    'Tailwind CSS'
+  ],
+  desc: 'Healthcare accessibility platform connecting users with Ayushman Bharat-covered hospitals and treatments while enabling online consultation booking and preliminary health assessments. Built a centralized healthcare information system with hospital discovery, treatment information, diabetes risk assessment, mental wellness screening, and Firebase-powered data management to improve patient accessibility and engagement.',
+  accent: '#4CAF50',
+  link: '#',
+  badge: 'HealthTech',
+  stat: 'Healthcare Accessibility Platform',
+},
+
+{
+  name: 'My-Chat (AI Clone)',
+  stack: [
+    'React.js',
+    'JavaScript',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'OpenAI API',
+    'REST APIs',
+    'Tailwind CSS',
+    'JWT Authentication'
+  ],
+  desc: 'Full-stack conversational AI platform inspired by modern AI assistants, featuring an interactive React chat interface and OpenAI-powered responses. Developed RESTful backend services using Node.js and Express, integrated MongoDB for persistent conversation history, implemented JWT-based authentication, and designed a responsive chat experience for real-time AI interactions.',
+  accent: '#00e5c0',
+  link: '#',
+  badge: 'AI/ML',
+  stat: 'OpenAI-Powered Chat',
+},
+
+{
+  name: 'EMS – Employee System',
+  stack: [
+    'React.js',
+    'JavaScript',
+    'Tailwind CSS',
+    'Firebase',
+    'Firestore',
+    'Firebase Authentication',
+    'REST APIs',
+    'Responsive UI'
+  ],
+  desc: 'Employee management platform designed to centralize workforce operations including employee records, leave management, project assignments, and task tracking. Built a responsive dashboard with Firebase Authentication and Firestore for secure data management, enabling organizations to monitor employee activity and manage day-to-day workflows through a unified interface.',
+  accent: '#ff6b6b',
+  link: '#',
+  badge: 'SaaS',
+  stat: 'Employee Management Platform',
+},
+
+{
   name: 'HirePilot AI',
-  stack: ['React.js', 'FastAPI', 'Python', 'PostgreSQL', 'OpenAI API', 'LLM', 'Tailwind CSS'],
-  desc: 'AI-powered career copilot that analyzes resumes, provides ATS scoring, identifies skill gaps, matches candidates with job descriptions, and intelligently tailors resumes and cover letters for specific roles. Includes AI-powered mock interviews with role-specific question generation, real-time text and voice interactions, adaptive follow-up questions, and detailed performance feedback. Also provides GitHub and portfolio analysis, personalized career roadmaps, job application tracking, and an AI career assistant for personalized career guidance.',
+  stack: [
+    'React.js',
+    'FastAPI',
+    'Python',
+    'PostgreSQL',
+    'OpenAI API',
+    'LLM',
+    'NLP',
+    'REST APIs',
+    'Tailwind CSS',
+    'JWT Authentication'
+  ],
+  desc: 'AI-powered career copilot that analyzes resumes, generates ATS compatibility scores, identifies skill gaps, matches candidates with job descriptions, and intelligently tailors resumes and cover letters for specific roles. Features AI-generated mock interviews with resume-based questions, adaptive follow-ups, voice and text interactions, interview performance evaluation, GitHub analysis, personalized career roadmaps, and job application tracking.',
   accent: '#6366F1',
   link: '#',
   badge: 'AI CareerTech',
   stat: 'AI-Powered Career Copilot',
 },
-  {
-    name: 'Connect SRM',
-    stack: ['React.js', 'Firebase', 'Tailwind'],
-    desc: 'Student-focused platform with 2,000+ users. Led web development, UI/UX design, and community engagement with scroll animations and geometric transitions.',
-    accent: '#7c6fff',
-    link: '#',
-    badge: 'LIVE',
-    stat: '2K+ Users',
-  },
-  {
-    name: 'AgriEase',
-    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Machine Learning'],
-    desc: 'AI-powered agriculture platform providing multilingual farmer support, intelligent chatbot assistance, soil health analysis, crop disease prediction, and smart crop recommendations. Utilizes soil test reports, land records, and seasonal conditions to suggest the most suitable crops and cultivation periods. Integrated a digital marketplace connecting farmers with buyers and suppliers for a seamless farming ecosystem.',
-    accent: '#8BC34A',
-    link: '#',
-    badge: 'AgriTech',
-    stat: 'AI-Powered Farming Assistant',
-  },
-  {
-    name: 'E-GoldStore',
-    stack: ['React.js', 'Firebase', 'Vite', 'Tailwind'],
-    desc: 'Digital platform for buying Gold & Silver online securely. Integrated Firebase auth, PayPal payment gateway, and real-time database.',
-    accent: '#f7c948',
-    link: '#',
-    badge: 'FINTECH',
-    stat: 'Secure Payments',
-  },
-  {
-    name: 'Vaidya',
-    stack: ['React.js', 'Node.js', 'Express.js', 'Firebase'],
-    desc: 'Built a HealthTech platform enabling users to discover Ayushman Bharat-covered hospitals and treatments, book online consultations, and perform preliminary health assessments including diabetes risk and mental wellness screening. Developed a centralized healthcare information system to enhance accessibility and patient engagement.',
-    accent: '#4CAF50',
-    link: '#',
-    badge: 'HealthTech',
-    stat: 'Healthcare Accessibility Platform',
-  },
-  {
-    name: 'My-Chat (AI Clone)',
-    stack: ['React.js', 'MongoDB', 'Express.js', 'Node.js'],
-    desc: 'Conversational AI using OpenAI API. Designed intuitive chat interface with React and Tailwind, backend with Node.js and Express for API handling.',
-    accent: '#00e5c0',
-    link: '#',
-    badge: 'AI/ML',
-    stat: 'OpenAI Powered',
-  },
-  {
-    name: 'EMS – Employee System',
-    stack: ['React', 'Tailwind CSS', 'Firebase'],
-    desc: 'Application to manage employee records — leaves, active projects, and task assignments with a clean, responsive dashboard.',
-    accent: '#ff6b6b',
-    link: '#',
-    badge: 'SaaS',
-    stat: 'Full Featured',
-  },
 ];
 
 function ProjectCard({ project, index }) {
