@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const socials = [
   { label: 'GitHub', handle: '@HarshBhushanD', url: 'https://github.com/HarshBhushanD', color: '#7c6fff' },
   { label: 'LinkedIn', handle: '@harshbhushandixit', url: 'https://linkedin.com/in/harshbhushandixit', color: '#00e5c0' },
-  { label: 'LeetCode', handle: '@Harshbhushandixit', url: '#', color: '#f7c948' },
+  { label: 'LeetCode', handle: '@Harshbhushandixitmzp', url: '#', color: '#f7c948' },
 ];
 
 export default function Contact() {
