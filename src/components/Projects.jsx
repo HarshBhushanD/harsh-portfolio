@@ -4,7 +4,28 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const projects = [{
+const projects = [
+  
+{
+  name: 'HirePilot AI',
+  stack: [
+    'React.js',
+    'FastAPI',
+    'Python',
+    'PostgreSQL',
+    'OpenAI API',
+    'LLM',
+    'NLP',
+    'REST APIs',
+    'Tailwind CSS',
+    'JWT Authentication'
+  ],
+  desc: 'AI-powered career copilot that analyzes resumes, generates ATS compatibility scores, identifies skill gaps, matches candidates with job descriptions, and intelligently tailors resumes and cover letters for specific roles. Features AI-generated mock interviews with resume-based questions, adaptive follow-ups, voice and text interactions, interview performance evaluation, GitHub analysis, personalized career roadmaps, and job application tracking.',
+  accent: '#6366F1',
+  link: '#',
+  badge: 'AI CareerTech',
+  stat: 'AI-Powered Career Copilot',
+},{
   name: 'Connect SRM',
   stack: [
     'React.js',
@@ -122,28 +143,7 @@ const projects = [{
   link: '#',
   badge: 'SaaS',
   stat: 'Employee Management Platform',
-},
-
-{
-  name: 'HirePilot AI',
-  stack: [
-    'React.js',
-    'FastAPI',
-    'Python',
-    'PostgreSQL',
-    'OpenAI API',
-    'LLM',
-    'NLP',
-    'REST APIs',
-    'Tailwind CSS',
-    'JWT Authentication'
-  ],
-  desc: 'AI-powered career copilot that analyzes resumes, generates ATS compatibility scores, identifies skill gaps, matches candidates with job descriptions, and intelligently tailors resumes and cover letters for specific roles. Features AI-generated mock interviews with resume-based questions, adaptive follow-ups, voice and text interactions, interview performance evaluation, GitHub analysis, personalized career roadmaps, and job application tracking.',
-  accent: '#6366F1',
-  link: '#',
-  badge: 'AI CareerTech',
-  stat: 'AI-Powered Career Copilot',
-},
+}
 ];
 
 function ProjectCard({ project, index }) {
