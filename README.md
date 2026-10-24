@@ -44,6 +44,8 @@ I am a Full Stack Developer and Computer Science student passionate about buildi
 * Docker
 * Jenkins
 * GitLab CI/CD
+* Kubernetes
+* Grafana
 
 ### Tools
 
